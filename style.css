@@ -1,8 +1,11 @@
 body{
-    background-color: grey;
     margin: 0px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-sizing: border-box;
+    padding: 0px;
 }
-
 #container-todo{
     margin: 0 auto;
     width: 500px;
@@ -10,6 +13,24 @@ body{
     display: flex;
     flex-direction: column;
 }
+#container-todo label{
+    font-size: 1.5em;
+}
+#container-todo input{
+    width: 200px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid black;
+}
 li{
     text-align: start;
+}
+ol{
+    border: 1px solid black;
+    height: 250px;
+    overflow: scroll;
+    min-width: 250px;
+}
+#fazer-feitas{
+    display: flex;
 }
