@@ -10,3 +10,6 @@ body{
     display: flex;
     flex-direction: column;
 }
+li{
+    text-align: start;
+}
