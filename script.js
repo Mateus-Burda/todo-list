@@ -5,7 +5,7 @@ document.getElementById("submit-button").onclick = function adicionarTarefa(){
     var tranformarEmTexto = document.createTextNode(pegarInput);
     var checkbox = document.createElement("input");checkbox.type = "checkbox";checkbox.className = "checkbox";checkbox.setAttribute("id","tarefa"+contarTarefas); // variavel para criar o input  e definir o tipo;
     checkbox.appendChild(tranformarEmTexto);
-    var label = document.createElement("label");label.appendChild(tranformarEmTexto);label.setAttribute("for","tarefa"+contarTarefas)
+    var label = document.createElement("label");label.appendChild(tranformarEmTexto);label.setAttribute("for","tarefa"+contarTarefas);label.setAttribute("class","checkbox")
     var divFazer = document.getElementById("fazer");
     var breakRow = document.createElement("br");
 

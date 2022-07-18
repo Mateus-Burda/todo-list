@@ -31,9 +31,9 @@ body{
 }
 #fazer ,#feitas{
     border: 1px solid black;
-    height: 250px;
+    height: 500px;
     overflow: scroll;
-    min-width: 250px;
+    min-width: 500px;
     background-color: white;
 }
 #fazer-feitas{
@@ -50,4 +50,7 @@ input.checkbox{
 width: 20px;
 text-align: start;
 color: black;
+}
+input.checkbox:checked + label{
+    text-decoration: line-through;
 }
