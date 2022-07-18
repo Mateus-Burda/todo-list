@@ -22,25 +22,32 @@ body{
     padding: 0px;
     border: 1px solid black;
 }
-li{
+#fazer-feitas input.checkbox{
     text-align: start;
     text-decoration: underline;
     text-transform: uppercase;
     margin-bottom: 2px;
     border-bottom: 1px solid black;
 }
-ol{
+#fazer ,#feitas{
     border: 1px solid black;
     height: 250px;
     overflow: scroll;
     min-width: 250px;
     background-color: white;
-    list-style: none;
-    padding: 3px;
 }
 #fazer-feitas{
     display: flex;
+    text-align: start;
 }
+#fazer-feitas label{
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
 input.checkbox{
 width: 20px;
+text-align: start;
+color: black;
 }
