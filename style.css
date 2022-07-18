@@ -6,17 +6,17 @@ body{
     box-sizing: border-box;
     padding: 0px;
 }
-#container-todo{
+.container-todo{
     margin: 0 auto;
     width: 500px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-#container-todo label{
+.container-todo label{
     font-size: 1.5em;
 }
-#container-todo input{
+.container-todo input{
     width: 200px;
     margin: 0 auto;
     padding: 0px;
@@ -24,13 +24,23 @@ body{
 }
 li{
     text-align: start;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    border-bottom: 1px solid black;
 }
 ol{
     border: 1px solid black;
     height: 250px;
     overflow: scroll;
     min-width: 250px;
+    background-color: white;
+    list-style: none;
+    padding: 3px;
 }
 #fazer-feitas{
     display: flex;
+}
+input.checkbox{
+width: 20px;
 }

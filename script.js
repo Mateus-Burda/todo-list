@@ -1,10 +1,11 @@
 
 document.getElementById("submit-button").onclick = function adicionarTarefa(){
-    var novoItem = document.createElement("li");// variavel para criar o li
+    var novoLi = document.createElement("li");novoLi.className="novoLi";// variavel para criar o li
     var inputTarefa = document.getElementById("nome-tarefa").value; // pega o valor do input e coloca como conteúdo da variavel
-    var inputTarefaUpper = inputTarefa.toUpperCase();//transforma o texto para Caixa Alta
-    var nomeTarefa = document.createTextNode(inputTarefaUpper); //transforma o valor do input como texto
-    var listaTarefas = document.getElementById("lista-tarefas");//Seleciona o UL
-    novoItem.appendChild(nomeTarefa);//insere o texto dentro da tag <li>
-    listaTarefas.appendChild(novoItem);//insere a tag com o conteúdo dentro do UL
+    var nomeTarefa = document.createTextNode(inputTarefa); //transforma o valor do input como texto
+    var ulListaTarefas = document.getElementById("lista-tarefas");//Seleciona o <ul>
+    novoLi.appendChild(nomeTarefa);//insere o texto dentro da tag <li>
+    var checkbox = document.createElement("input");checkbox.type = "checkbox";checkbox.className = "checkbox"; // variavel para criar o input  e definir o tipo;
+    novoLi.appendChild(checkbox);
+    ulListaTarefas.appendChild(novoLi);//insere a tag com o conteúdo dentro do <ul>
 }
