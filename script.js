@@ -4,16 +4,23 @@ const containerTarefas = document.querySelector(".container-tarefas");
 
 addTarefaButton.onclick = function novaTarefa() {
     const novoParagrafo = document.createElement("p");
+    novoParagrafo.classList.add("paragrafo-tarefa")
     novoParagrafo.innerText = inputElement.value;
 
-    const novoBotão = document.createElement("button");
-    novoBotão.innerText = "X";
-    novoBotão.classList.add("botao-tarefa")
+    const novoCheck = document.createElement("input");
+    novoCheck.type = "checkbox";
+    novoCheck.classList.add("check-tarefa")
 
     const novoDiv = document.createElement("div");
     novoDiv.classList.add("div-tarefa");
-    novoDiv.appendChild(novoBotão);
+    novoDiv.appendChild(novoCheck);
     novoDiv.appendChild(novoParagrafo);
 
     containerTarefas.appendChild(novoDiv);
+
+    novoCheck.addEventListener("click", () => {
+        if(novoCheck.checked==true){
+            containerTarefas.removeChild(novoDiv)
+        }
+    })
 }
