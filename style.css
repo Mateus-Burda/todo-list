@@ -72,21 +72,19 @@ body{
     align-items: center;
     display: flex;
     text-transform: uppercase;
-    
 }
-
 /* Utilidades */
 .erro{
     border: 2px solid red !important;
     color: red;
     transition: 0.5s;
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: tremer 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 .erro::placeholder{
     transition: 0.5s;
     color: red;
 }
-@keyframes shake {
+@keyframes tremer {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
     }
