@@ -44,11 +44,11 @@ body{
     flex: 1;
     border-radius: 5px;
     height: 100%;
+    background-color: #fff;
     border: none;
     padding: 12px;
     margin-left: 10px;
     border: 2px solid rgb(209, 210, 211);
-    background: rgb(180, 185, 221);
     cursor: pointer;
 }
 .container-tarefas{
@@ -74,3 +74,31 @@ body{
     text-transform: uppercase;
     
 }
+
+/* Utilidades */
+.erro{
+    border: 2px solid red !important;
+    color: red;
+    transition: 0.5s;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+.erro::placeholder{
+    transition: 0.5s;
+    color: red;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }}
