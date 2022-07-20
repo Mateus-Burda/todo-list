@@ -2,6 +2,7 @@ const inputElement = document.querySelector(".nova-tarefa-input");
 const addTarefaButton = document.querySelector(".nova-tarefa-button")
 const containerTarefas = document.querySelector(".container-tarefas");
 
+
 addTarefaButton.onclick = function novaTarefa() {
     const novoParagrafo = document.createElement("p");
     novoParagrafo.classList.add("paragrafo-tarefa")
@@ -40,5 +41,13 @@ addTarefaButton.onclick = function novaTarefa() {
             }
         })   
     }
-inputElement.value = "";
-}
+    
+    inputElement.value = "";
+
+    }
+
+
+    document.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") {
+           addTarefaButton.click();
+        }})
